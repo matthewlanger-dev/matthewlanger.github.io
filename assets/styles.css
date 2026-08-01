@@ -1,0 +1,6 @@
+/* Small site styles used in addition to the theme */
+.profile{width:120px;height:120px;border-radius:9999px;display:block;margin:18px auto;object-fit:cover}
+.hero{padding:12px 0;text-align:center}
+.main-nav a{margin-left:12px}
+.container{max-width:900px;margin:0 auto;padding:24px}
+.site-footer .footer-nav{margin-bottom:8px}

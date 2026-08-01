@@ -3,13 +3,15 @@ layout: default
 title: "Matthew Langer"
 ---
 
+<img src="{{ site.profile_image | default: '/assets/profile-placeholder.svg' }}" alt="Matthew Langer" class="profile">
+
 <section class="hero">
 
 ## Hi — I'm Matthew
 
 **Product manager-in-training · Software engineer**
 
-I'm a software engineer with three years of experience collaborating closely with product, business, and engineering stakeholders. I'm actively transitioning into technical product management, bringing engineering fluency, customer empathy, and a data-informed approach to product decisions. In my current cross-functional role I have taken on product responsibilities and developed product-focused skills that complement my technical expertise. I'm eager to apply this combination to technical PM work.
+I am a software engineer with three years of experience working closely with product, business, and engineering stakeholders. I am actively transitioning into technical product management, bringing engineering fluency, customer empathy, and a data-informed approach to product decisions. In my current cross-functional role I’ve taken on product responsibilities and developed product-focused skills that complement my technical expertise. I am eager to apply this combination to technical PM work.
 
 </section>
 
