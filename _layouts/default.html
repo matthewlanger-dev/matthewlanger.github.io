@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <!-- Let the theme's CSS load -->
+    {{ site.theme | default: "" }}
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="/">{{ site.title }}</a></h1>
+        <nav class="main-nav">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+          <a href="{{ site.social.substack }}" target="_blank" rel="noopener">Substack</a>
+          <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <a href="{{ site.social.substack }}" target="_blank" rel="noopener">Substack</a>
+          <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+        <div>© {{ site.time | date: "%Y" }} {{ site.author }}</div>
+      </div>
+    </footer>
+  </body>
+</html>
